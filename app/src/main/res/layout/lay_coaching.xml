@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_custom">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.95">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="MBE"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Candidate? "
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="-1dp"
+            android:layout_weight="1.3"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:padding="4dp"
+                android:text="Territory:"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:padding="4dp"
+                android:text="Name:"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:padding="4dp"
+                android:text="Desig.:"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:padding="4dp"
+                android:text="Date O.J:"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:orientation="vertical"
+            android:layout_weight=".55"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:padding="4dp"
+                android:text="100"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:padding="4dp"
+                android:text="100"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:padding="4dp"
+                android:text="100"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:padding="4dp"
+                android:text="100"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="-1dp"
+            android:layout_weight="1.2">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:hint="----"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:hint="----"
+                android:padding="4dp"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:hint="----"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="-1dp"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_ashbg2"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="end"
+                android:hint="----"
+                android:padding="4dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/div_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_custom">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.95">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_planbg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:text="P"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center"
+                    android:text="Plan"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_plan2bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center"
+                    android:text="Plan Updated and approved?"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight="1.3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="Territory.P"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="TWWP"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="MWS"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="Doctor List"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="Call Plan"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight=".55"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_plan2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--<LinearLayout
+        android:id="@+id/div_attend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_custom">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.65">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/bordar_around_tea2bg"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="Attend"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_weight=".4"
+                    android:gravity="center"
+                    android:background="@drawable/bordar_around_tea2bg"
+                    android:text="Attendance Proper?"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".6"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/bordar_around_tea2bg"
+                    android:gravity="center"
+                    android:text="Get-Up?"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight=".91"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="Att.Proper?"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="TWWP"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="MWS"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="Doctor List"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight=".92"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="Territory:"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="Name:"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="Desig.:"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="Date O.J:"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight=".627"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight=".9"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="&#45;&#45;&#45;&#45;"
+                    android:padding="4dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="&#45;&#45;&#45;&#45;"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:hint="&#45;&#45;&#45;&#45;"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_teabg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="4dp"
+                    android:hint="&#45;&#45;&#45;&#45;"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>-->
+
+
+</LinearLayout>

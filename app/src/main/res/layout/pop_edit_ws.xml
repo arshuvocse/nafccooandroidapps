@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="4dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_main_shade"
+                        android:orientation="horizontal"
+                        android:elevation="4dp">
+
+                        <TextView
+
+                            android:id="@+id/tv_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:padding="4dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:text="Edit For :" />
+                        <TextView
+                            android:id="@+id/tv_edit_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/roboto_bold"
+                            android:padding="4dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            tools:text="" />
+
+                        <ImageView
+                            android:id="@+id/iv_close"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/color_red"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_cancel_24"
+                            app:tint="@color/white"
+                            tools:text="Details" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+                        <LinearLayout
+                            android:id="@+id/heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:backgroundTint="@color/color_main3deep"
+                            android:padding="4dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/llday">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="Morning"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/white" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/roboto_medium"
+                                android:gravity="center"
+                                android:text="Evening"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/color_main3deep" />
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/heading"
+                            app:layout_constraintBottom_toTopOf="@+id/btn_save">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/tourtype"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/mspinnerTourType"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="10sp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/work_type"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/mspinnerWorkType"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="10sp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/od"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/mspinnerDDay"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="10sp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="Territory"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/mspinnerTeri"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="10sp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="Travel By"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/mspinnerTravel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="8dp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:elevation="3dp"
+                                        android:orientation="vertical"
+                                        android:padding="4dp"
+
+                                        >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/atime"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp"
+
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:background="@color/white"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tv_mstarttime"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:layout_marginStart="4dp"
+                                                android:background="@color/white"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:text="---- ----"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+
+                                                />
+
+                                            <ImageView
+                                                android:id="@+id/msclock"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/ic_clock"
+                                                app:tint="@color/purple_700" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:elevation="3dp"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/spoint"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp"
+
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:background="@drawable/shape_rect_border"
+                                            android:orientation="horizontal">
+
+                                            <EditText
+                                                android:id="@+id/tv_mstartpoint"
+                                                android:layout_width="0dp"
+                                                android:layout_height="26dp"
+                                                android:layout_weight="1"
+                                                android:background="@color/white"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:hint="----- -----"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+
+                                                />
+
+                                            <!--   <ImageView
+                                                   android:id="@+id/msloc"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="wrap_content"
+                                                   android:src="@drawable/ic_location"
+                                                   app:tint="@color/color_main3"/>-->
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:elevation="3dp"
+                                        android:orientation="vertical"
+                                        android:padding="4dp"
+
+                                        >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/epoint"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp"
+
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:background="@drawable/shape_rect_border"
+                                            android:orientation="horizontal">
+
+                                            <EditText
+                                                android:id="@+id/tv_mendpoint"
+                                                android:layout_width="0dp"
+                                                android:layout_height="26dp"
+                                                android:layout_weight="1"
+                                                android:background="@color/white"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:hint="----- -----"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+
+                                                />
+
+                                            <!--      <ImageView
+                                                      android:id="@+id/meloc"
+                                                      android:layout_width="wrap_content"
+                                                      android:layout_height="wrap_content"
+                                                      android:src="@drawable/ic_location"
+                                                      app:tint="@color/color_main3"/>-->
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:elevation="3dp"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/etime"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp"
+
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:background="@color/white"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tv_mendtime"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:layout_marginStart="4dp"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:text="---- ----"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+
+                                                />
+
+                                            <ImageView
+                                                android:id="@+id/meclock"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/ic_clock"
+                                                app:tint="@color/purple_700" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:background="@color/purple_700" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/tourtype"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/espinnerTourType"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="10sp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/work_type"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/espinnerWorkType"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="10sp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/od"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/espinnerDDay"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="10sp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="Territory"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/espinnerTeri"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="10sp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="Travel By"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp" />
+
+                                        <Spinner
+                                            android:id="@+id/espinnerTravel"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="30dp"
+                                            android:backgroundTint="@color/purple_700"
+                                            android:elevation="8dp"
+                                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp"
+
+                                        >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/atime"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp"
+
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:background="@color/white"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tv_estarttime"
+                                                android:layout_width="0dp"
+                                                android:layout_marginStart="4dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:text="---- ----"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+
+                                                />
+
+                                            <ImageView
+                                                android:id="@+id/esclock"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/ic_clock"
+                                                app:tint="@color/purple_700" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp"
+
+                                        >
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/spoint"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp"
+
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:background="@drawable/shape_rect_border"
+
+                                            android:orientation="horizontal">
+
+                                            <EditText
+                                                android:id="@+id/tv_estartpoint"
+                                                android:layout_width="0dp"
+                                                android:layout_height="26dp"
+                                                android:layout_weight="1"
+                                                android:background="@color/white"
+                                                android:fontFamily="@font/roboto_medium"
+
+                                                android:hint="----- -----"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp" />
+                                            <!--   <ImageView
+                                                   android:id="@+id/esloc"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="wrap_content"
+                                                   android:src="@drawable/ic_location"
+                                                   app:tint="@color/color_main3"/>-->
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/epoint"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp"
+
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:background="@drawable/shape_rect_border"
+                                            android:orientation="horizontal">
+
+                                            <EditText
+                                                android:id="@+id/tv_eendpoint"
+                                                android:layout_width="0dp"
+                                                android:layout_height="26dp"
+                                                android:layout_weight="1"
+                                                android:background="@color/white"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:hint="----- -----"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+
+                                                />
+
+                                            <!--  <ImageView
+                                                  android:id="@+id/eeloc"
+                                                  android:layout_width="wrap_content"
+                                                  android:layout_height="wrap_content"
+                                                  android:src="@drawable/ic_location"
+                                                  app:tint="@color/color_main3"/>-->
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:orientation="vertical"
+                                        android:padding="4dp"
+
+                                        >
+
+                                        <TextView
+                                            android:id="@+id/specialityLabel"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="@string/etime"
+                                            android:textColor="@color/purple_700"
+                                            android:textSize="14sp"
+
+                                            />
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:background="@color/white"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/tv_eendtime"
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1"
+                                                android:layout_marginStart="4dp"
+                                                android:fontFamily="@font/roboto_medium"
+                                                android:text="---- ----"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+
+                                                />
+
+                                            <ImageView
+                                                android:id="@+id/eeclock"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@drawable/ic_clock"
+                                                app:tint="@color/purple_700" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </ScrollView>
+
+                        <Button
+                            android:id="@+id/btn_save"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:backgroundTint="@color/color_main_deep"
+                            android:paddingStart="60dp"
+                            android:paddingEnd="60dp"
+                            android:text="Update"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <TextView
+                android:id="@+id/warnToast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="6dp"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:visibility="visible"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <!--   <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           app:cardCornerRadius="6dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:scrollbars="none"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/toolbar_custom">
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/cardView3"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="4dp"
+                       android:layout_marginEnd="4dp"
+                       app:cardBackgroundColor="@color/white"
+                       app:cardCornerRadius="4dp"
+                       app:cardElevation="4dp"
+                       app:contentPadding="8dp"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center_vertical"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:id="@+id/presc_EnameTv"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/roboto_bold"
+                               android:padding="2dp"
+                               android:textColor="@color/color_main_deep"
+                               android:textSize="16sp"
+                               tools:text="name_and_code" />
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:text="Created Date : "
+                                   android:textColor="@color/black" />
+
+                               <TextView
+                                   android:id="@+id/leave_dateTv"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:textColor="@color/black"
+                                   tools:text="" />
+                           </LinearLayout>
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:text="Leave Duration : "
+                                   android:textColor="@color/black" />
+
+                               <TextView
+                                   android:id="@+id/leave_DnameTv"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:textColor="@color/black" />
+                           </LinearLayout>
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:text="Return Date : "
+                                   android:textColor="@color/black" />
+
+                               <TextView
+                                   android:id="@+id/leave_ReturnTv"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:textColor="@color/black" />
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/llmil"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:text="Leave Type : "
+                                   android:textColor="@color/black" />
+
+                               <TextView
+                                   android:id="@+id/leave_TypeTv"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:textColor="@color/black" />
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:text="Leave Address : "
+                                   android:textColor="@color/black" />
+
+                               <TextView
+                                   android:id="@+id/leave_addressTv"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:textColor="@color/black" />
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="horizontal">
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:text="Emergency Contact : "
+                                   android:textColor="@color/black" />
+
+                               <TextView
+                                   android:id="@+id/leave_contactTv"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:padding="2dp"
+                                   android:textColor="@color/black" />
+                           </LinearLayout>
+
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <LinearLayout
+                       android:id="@+id/cardView5"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:layout_marginStart="6dp"
+                       android:layout_marginEnd="6dp"
+                       android:background="@color/white"
+                       android:elevation="4dp"
+                       android:orientation="vertical"
+                       android:padding="6dp"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+                       <TextView
+                           android:id="@+id/a"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/roboto_medium"
+                           android:padding="2dp"
+                           android:text="Reason"
+                           android:textColor="@color/black"
+                           app:layout_constraintTop_toTopOf="parent" />
+
+                       <TextView
+                           android:id="@+id/leave_reason"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/roboto_medium"
+                           android:padding="2dp"
+                           android:text="Reason"
+                           android:textColor="@color/black"
+                           app:layout_constraintTop_toTopOf="parent" />
+                   </LinearLayout>
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/cardView6"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="4dp"
+                       android:layout_marginTop="6dp"
+                       android:layout_marginEnd="4dp"
+                       app:cardBackgroundColor="@color/white"
+                       app:cardCornerRadius="4dp"
+                       app:cardElevation="4dp"
+                       app:contentPadding="8dp"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/cardView5">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center_vertical"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/roboto_medium"
+                               android:padding="2dp"
+                               android:text="Comments"
+                               android:textColor="@color/black"
+                               app:layout_constraintTop_toTopOf="parent"/>
+
+                           <TextView
+                               android:id="@+id/leave_comment"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/roboto_medium"
+                               android:padding="2dp"
+                               android:textColor="@color/black"
+                               tools:text="&#45;&#45;&#45;&#45; &#45;&#45;&#45;&#45;" />
+
+
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                       android:id="@+id/cardView7"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="4dp"
+                       android:layout_marginTop="6dp"
+                       android:layout_marginEnd="4dp"
+                       app:cardBackgroundColor="@color/white"
+                       app:cardCornerRadius="4dp"
+                       app:cardElevation="4dp"
+                       app:contentPadding="8dp"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center_vertical"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:fontFamily="@font/roboto_medium"
+                               android:padding="2dp"
+                               android:text="Prescription"
+                               android:textColor="@color/color_main_deep"
+                               android:textSize="16sp" />
+
+                           <ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+                               android:id="@+id/prescImg"
+                               android:layout_width="match_parent"
+                               android:layout_height="200dp"
+                               android:scaleType="fitXY" />
+
+                       </LinearLayout>
+                   </androidx.cardview.widget.CardView>
+
+                   <TextView
+                       android:id="@+id/warnToast"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="6dp"
+                       android:layout_marginTop="5dp"
+                       android:layout_marginEnd="6dp"
+                       android:fontFamily="@font/roboto_medium"
+                       android:gravity="center"
+                       android:textColor="@color/white"
+                       android:textSize="16sp"
+                       android:visibility="visible"
+                       app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </ScrollView>
+       </androidx.cardview.widget.CardView>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

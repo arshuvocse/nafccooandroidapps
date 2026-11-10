@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Dar_N_coaching.ActivityCoaching">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/color_main_deep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:theme="@style/ToolbarTheme">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Coaching Activity"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- <LinearLayout
+         android:id="@+id/lloption"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:orientation="horizontal"
+         android:padding="1dp"
+         android:weightSum="5"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/toolbar_custom">
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="2"
+             android:background="@drawable/bordar_around_ashbg"
+             android:fontFamily="@font/roboto_medium"
+             android:padding="6dp"
+             android:text="PAAS Coaching "
+             android:textColor="@android:color/black"
+             android:textSize="14sp" />
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1.5"
+             android:layout_marginStart="-1dp"
+             android:background="@drawable/bordar_around_ashbg"
+             android:fontFamily="@font/roboto_medium"
+             android:padding="6dp"
+             android:text="Session"
+             android:textColor="@android:color/black"
+             android:textSize="14sp" />
+
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight=".2"
+             android:layout_marginStart="-1dp"
+             android:background="@drawable/bordar_around_yeallobg"
+             android:fontFamily="@font/roboto_medium"
+             android:padding="6dp"
+             android:text="Scr."
+             android:textColor="@color/black"
+             android:textSize="14sp" />
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1.3"
+             android:layout_marginStart="-1dp"
+             android:background="@drawable/bordar_around_ashbg"
+             android:fontFamily="@font/roboto_medium"
+             android:padding="6dp"
+             android:text="Remarks"
+             android:textColor="@color/black"
+             android:textSize="14sp" />
+
+
+     </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/lloption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_custom">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.95"
+            android:background="@drawable/bordar_around_ashbg"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="6dp"
+            android:text="PAAS Coaching "
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight="1.3"
+            android:background="@drawable/bordar_around_ashbg"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="6dp"
+            android:text="Session"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight=".55"
+            android:background="@drawable/bordar_around_yeallobg"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="6dp"
+            android:text="Scr."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight="1.2"
+            android:background="@drawable/bordar_around_ashbg"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="6dp"
+            android:text="Remarks"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lloption">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+         <!--   <include
+                layout="@layout/lay_coaching"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <include
+                layout="@layout/lay_co_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/lay_co_scientific"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+            <include
+                layout="@layout/lay_co_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <include
+                layout="@layout/lay_co_scientific"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <include
+                layout="@layout/lay_co_selling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

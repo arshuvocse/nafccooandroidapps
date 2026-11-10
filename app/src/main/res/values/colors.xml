@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_main">#11A8A5</color>
+    <color name="color_main_deep">#005A59</color>
+    <color name="textGrey">#989898</color>
+    <color name="textGrey_deep">#838383</color>
+    <color name="lightGrey">#E8E8E8</color>
+    <color name="color_layout_bg">#f7f7f7f7</color>
+    <color name="color_main_shadow">#EDEDED</color>
+    <color name="color_yellow">#FFFF00</color>
+
+    <color name="button_pressed_tint">#1A000000</color> <!-- 10% black overlay -->
+    <color name="button_normal_tint">#FFFFFFFF</color>
+    <color name="color_main2">#FAA74A</color>
+    <color name="color_main3">#FF9E32</color>
+    <color name="color_main3deep">#FF9825</color>
+    <color name="color_red">#D50000</color>
+    <color name="color_main_shade">#658A8A</color>
+    <color name="main">#0f4BA6</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="workwithcolor">#f6eae9</color>
+    <color name="LeaveColor">#F3F9EA</color>
+    <color name="LeaveColorEnd">#F0F7DD</color>
+    <color name="SolightBlue">#E1E7F1</color>
+    <color name="red_shadow">#CDAFAF</color>
+    <color name="third">#00b248</color>
+    <color name="box_shape_color">#457D81</color>
+    <color name="box_shape_color_end">#456CA8</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_shade1">#FFE0B2</color>
+    <color name="color_shade2">#C8E6C9</color>
+    <color name="deepBlue">#10428F</color>
+    <color name="lightBlue">#E1EAF5</color>
+
+    <color name="amber">#FFA000</color>
+    <color name="color_shade3">#B3E5FC</color>
+    <color name="color_shade4">#BBDEFB</color>
+    <color name="color_shade5">#FFF8B9</color>
+    <color name="color_shade6">#FFCBBA</color>
+    <color name="pBlue">#4169e1</color>
+    <color name="main2">#F50057</color>
+    <color name="smcblue">#0f4BA6</color>
+    <color name="smcblue_deep">#0A449C</color>
+    <color name="typeGrey">#6f7172</color>
+    <color name="main_shadow">#D6EFF3</color>
+    <color name="md_indigo_50">#E8EAF6</color>
+    <color name="md_indigo_100">#C5CAE9</color>
+    <color name="md_indigo_200">#9FA8DA</color>
+    <color name="md_indigo_300">#7986CB</color>
+
+    <color name="mainshadow">#FBF1E8</color>
+    <color name="red">#C12222</color>
+    <color name="md_indigo_400">#5C6BC0</color>
+    <color name="md_indigo_500">#3F51B5</color>
+    <color name="md_indigo_600">#3949AB</color>
+    <color name="md_indigo_700">#303F9F</color>
+    <color name="md_indigo_800">#283593</color>
+    <color name="md_indigo_900">#1A237E</color>
+    <color name="md_indigo_A100">#8C9EFF</color>
+    <color name="md_indigo_A200">#536DFE</color>
+    <color name="md_indigo_A400">#3D5AFE</color>
+    <color name="md_indigo_A700">#304FFE</color>
+</resources>

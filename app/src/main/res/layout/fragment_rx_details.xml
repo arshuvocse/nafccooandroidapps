@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Reports.Rx.FragmentRxDetails">
+
+    <LinearLayout
+        android:id="@+id/tbDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_dname"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="D.Name"
+            android:background="@drawable/border_around"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_odoctor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:fontFamily="@font/roboto_medium"
+            android:background="@drawable/border_around"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="O.Doctor"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_subdate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/border_around"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="Sub.Date"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_rxdate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/border_around"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="Rx Date"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@drawable/border_around"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="Brand"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+
+            />
+        <TextView
+            android:id="@+id/iv_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/border_around"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Rx Img"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            />
+
+
+    </LinearLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swip_"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbDesc">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_rxdetails"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/btn_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="6dp"
+        android:text="Filter"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto_medium"
+        android:background="@drawable/shape_rect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

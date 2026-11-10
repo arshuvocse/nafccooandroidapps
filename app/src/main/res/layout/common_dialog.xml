@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/ff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_shadow"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Select Doctor"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+   <!-- <ImageView
+        android:id="@+id/cleare"
+        android:layout_width="38dp"
+        android:layout_height="0dp"
+        android:elevation="8dp"
+        android:src="@drawable/ic_cancel_24"
+        app:tint="@color/red"
+        android:background="@color/mainshadow"
+        app:layout_constraintBottom_toBottomOf="@+id/ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ff" />-->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ff">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_doclist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scrollbars="none"
+            tools:listitem="@layout/rv_sampleorderlist"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/mainshadow"
+           >
+
+            <EditText
+                android:id="@+id/srchview"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:hint="Search"
+                android:drawableStart="@drawable/ic_search_24"
+                android:paddingStart="4dp"
+                android:background="@color/main_shadow"
+                app:queryHint="Search" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginEnd="2dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@color/red_shadow"
+                android:text="@string/common_cancel" />
+            <!--        style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+            <!--  <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />-->
+
+            <TextView
+                android:id="@+id/btn_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginStart="2dp"
+                android:background="@color/main"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:text="@string/common_done" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

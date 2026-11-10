@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/masterLayout"
+    tools:context=".Doctor.TourePlan.TP.ActivityTourPlan_">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_custom"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="10dp"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:theme="@style/ToolbarThemeMainColor"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/lato"
+                android:gravity="center|start"
+                android:text="@string/tour_plan"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/statusClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shape_status_bg"
+                android:backgroundTint="@color/md_indigo_A700"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="4dp"
+                android:text="@string/status"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+          <!--  <ImageView
+                android:id="@+id/filter"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/ic_search_24"
+                app:tint="@color/md_indigo_A700"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />-->
+
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/llday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_custom">
+        <!--  <CalendarView
+              android:id="@+id/calendar_view2"
+              android:layout_width="match_parent"
+              android:layout_height="300dp"
+              android:visibility="visible"
+              android:background="@color/white"
+
+              />-->
+        <!--   <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/calendarView"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:mcv_showOtherDates="option"
+               app:mcv_arrowColor="@color/colorPrimaryDark"
+               app:mcv_selectionColor="@color/colorPrimaryDark"
+               app:mcv_headerTextAppearance="style"
+               app:mcv_dateTextAppearance="style"
+               app:mcv_weekDayTextAppearance="style"
+               app:mcv_weekDayLabels="array"
+               app:mcv_monthLabels="array"
+               app:mcv_tileSize="20dp"
+               app:mcv_tileWidth="20dp"
+               app:mcv_tileHeight="20dp"
+               app:mcv_leftArrowMask="drawable"
+               app:mcv_rightArrowMask="drawable"
+               />-->
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="fill_parent"
+            android:layout_height="280dp"
+            app:mcv_selectionColor="#0000F3"
+            app:mcv_selectionMode="single"
+            app:mcv_showOtherDates="none"
+            app:mcv_allowClickDaysOutsideCurrentMonth="false"
+            app:mcv_tileSize="26sp"
+            app:mcv_tileWidth="match_parent"
+            />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_planlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llday" />
+
+    <ImageView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/data_not_found"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llday"
+        android:contentDescription="TODO" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

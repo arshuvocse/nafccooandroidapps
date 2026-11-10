@@ -1,0 +1,6 @@
+<resources>
+    <!--
+    Google Maps API key is injected via app/build.gradle (resValue "string", "google_maps_key")
+    from MAPS_API_KEY in local.properties (git-ignored) or environment variable MAPS_API_KEY.
+    -->
+</resources>

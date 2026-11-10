@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.UniSalessoulution" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+
+        <item name="colorPrimary">@color/color_main</item>
+        <item name="colorPrimaryVariant">@color/color_main</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/color_main</item>
+        <item name="colorSecondaryVariant">@color/color_main</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+       <!-- <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/color_main_deep</item>
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.MaterialComponents.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorPrimary">@color/smcblue</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+    <style name="ToolbarThemeMainColor" parent="@style/Widget.MaterialComponents.ActionBar.Primary">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@color/main</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.DialogWhenLarge">
+<!--        <item name="android:windowAnimationStyle">@style/CustomDialogAnimation</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/color_main_deep</item>
+    </style>
+</resources>
+

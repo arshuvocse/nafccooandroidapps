@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+ <!--   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ScrollView>-->
+    <LinearLayout
+        android:id="@+id/div_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.95">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/bordar_around_scientificbg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="center"
+                    android:text="Scientific Activities"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:weightSum="35"
+                android:background="@drawable/bordar_around_scientific2bg"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"
+
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:gravity="center"
+                    android:text="Priority Product Knowledge?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:gravity="center"
+                    android:text="Pre-Call Readiness?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:gravity="center"
+                    android:text="Call Stage Evaluation?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:gravity="center"
+                    android:text="Post-Call Evaluation?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:gravity="center"
+                    android:text="Customer Relationship?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:gravity="center"
+                    android:text="Joint Calls?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+
+                    android:fontFamily="@font/roboto_light"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:gravity="center"
+                    android:text="Day’s Rx?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-1dp"
+            android:layout_weight="1.3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="35">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Dexnaaf"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Esonaaf"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Furonaaf"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Cefinaaf"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Montenaaf"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Fexonaaf"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Naafcal-D"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Lifecal-D"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Naafvit AZ"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Nuronaaf"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Day’s Call Plan, Correct?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Organized Promo?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Prepared for Detailing?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Call Preparation"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Opening Statement"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Kay Messages"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Bridging Statement"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Visual Aid"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Knowledge"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Objection Handling"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Call Closing"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Review &amp; Actions"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Asked for Rx?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Followed Action Plan?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Used Promo as per Plan?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Submitted Call Report?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Doctor profiling?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Brand positioning?"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Relationship"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Planned"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Unplanned"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Total"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Target"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Seen"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="Shared"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-1dp"
+            android:layout_weight=".55"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="35">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="3"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientificbg"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="100"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:text="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="35"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:padding="2dp"
+                    android:hint="----"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/bordar_around_scientific2bg"
+                    android:fontFamily="@font/roboto_light"
+                    android:gravity="end"
+                    android:hint="----"
+                    android:padding="2dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

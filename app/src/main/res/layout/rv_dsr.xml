@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_teri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/border_around"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:text=""
+            android:padding="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_op"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-1dp"
+            android:layout_weight="1"
+            android:layout_marginTop="-1dp"
+            android:background="@drawable/bordar_around_yeallobg"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:text=""
+            android:padding="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_ao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="-1dp"
+            android:layout_weight="1"
+            android:background="@drawable/bordar_around_yeallo2bg"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:text=""
+            android:padding="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_devi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="-1dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_around"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="-1dp"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_around"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="center"
+
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="11sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

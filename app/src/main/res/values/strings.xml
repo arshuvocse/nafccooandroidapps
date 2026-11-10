@@ -1,0 +1,253 @@
+<resources>
+    <string name="app_name">NAAFCO Sales-Roll</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tag_place_order">Place Order</string>
+    <string name="training">Training</string>
+    <string name="tag_view_information">View Information</string>
+    <string name="refresh">Refresh</string>
+    <string name="attendance_image_preview">Attendance image preview</string>
+    <string name="login_id">Login ID</string>
+    <string name="login_txt">LOG IN</string>
+    <string name="forgot_pass_txt">FORGOT PASSWORD?</string>
+    <string name="app_version">App Version :</string>
+    <string name="creatrix_soft_tech_ltd">Creatrix Soft Tech Ltd.</string>
+
+    <string name="objective_purpose">Objective <font color='#FF0000'>*</font></string>
+    <string name="tour_plan_purpose_other">Tour Plan Purpose Other <font color='#FF0000'>*</font></string>
+    <string name="password">Password</string>
+    <string name="owner_name_">Owner Name</string>
+    <string name="StartPlace">Start Place (Market) <font color='#FF0000'>*</font></string>
+    <string name="EndPlace">End Place (Market) <font color='#FF0000'>*</font></string>
+    <string name="Other_Market_Visit">Other Market Visit (Maximum 5 Markets)</string>
+    <string name="Other_Market_Visit_list">Other Market Visit List:</string>
+    <string name="evening">Evening</string>
+    <string name="tour_plan_purpose">Tour Plan Purpose <font color='#FF0000'>*</font></string>
+    <string name="morning">Morning</string>
+    <string name="other_visit">Other Visit</string>
+    <string name="market_visit">Market Visit</string>
+    <string name="todo">todo</string>
+    <string name="attendance">Attendance</string>
+    <string name="order_summary">Order Summary</string>
+    <string name="sales_summary">Sales Summary</string>
+    <string name="monthly_expense_summary">Monthly Expense</string>
+    <string name="product_information">Product Informaton</string>
+    <string name="stock_information">Stock Information</string>
+    <string name="sample_stock_information">Sample Stock</string>
+    <string name="target_vs_achievement">Target VS Achievement</string>
+    <string name="dcr_report">DCR Report</string>
+    <string name="prescription_list">Prescription Report</string>
+    <string name="leave_records">Leave Report</string>
+    <string name="doctor_list">Doctor Report</string>
+    <string name="mileage_claim_list">Mileage Claim Report</string>
+    <string name="team">Team List</string>
+    <string name="customer_list">Customer Report</string>
+    <string name="customer_due_menu">Customer Due</string>
+    <string name="customer_due_title">Customer Due List</string>
+    <string name="customer_due_subtitle">Multiple customer outstanding summary</string>
+    <string name="customer_due_total_customers">Total Customers</string>
+    <string name="customer_due_total_due">Total Due</string>
+    <string name="customer_due_zero_amount">Tk 0</string>
+    <string name="customer_due_search">Search due customer</string>
+    <string name="customer_due_search_hint">Search customer...</string>
+    <string name="customer_due_view_all">View All Details</string>
+    <string name="customer_due_name_label">Customer Name</string>
+    <string name="customer_due_amount_label">Due Amount</string>
+    <string name="customer_due_cell_format">Cell No: %1$s</string>
+    <string name="customer_due_money_format">Tk %1$s</string>
+    <string name="customer_due_empty">No customer due available.</string>
+    <string name="customer_due_no_match">No customer matches your search.</string>
+    <string name="customer_due_no_filter_match">No customer matches the current filter.</string>
+    <string name="customer_due_load_error">Unable to load customer due data.</string>
+    <string name="customer_due_back">Back</string>
+    <string name="customer_due_filter">Filter customer due</string>
+    <string name="customer_due_filter_sort">Sort By</string>
+    <string name="customer_due_filter_market">Market</string>
+    <string name="customer_due_sort_highest_due">Highest Due</string>
+    <string name="customer_due_sort_lowest_due">Lowest Due</string>
+    <string name="customer_due_sort_customer_az">Customer A-Z</string>
+    <string name="customer_due_sort_customer_za">Customer Z-A</string>
+    <string name="customer_due_all_markets">All Markets</string>
+    <string name="api_error">Something went wrong. Please try again.</string>
+    <string name="da_list">DA Report</string>
+    <string name="team_expense_claim">Expense Report</string>
+    <string name="expense_claimrz">Expanse Claim Report</string>
+    <string name="expense_claim">Expanse Claim</string>
+    <string name="add_customer">ADD Customer</string>
+    <string name="tag_mobile">Mobile</string>
+    <string name="chemist_name">Customer Name</string>
+    <string name="customer_address">Customer Address</string>
+    <string name="program_type">Program Type</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="nid_number">NID Number</string>
+    <string name="trade_license_number">Trade License Number</string>
+    <string name="tag_zone">Zone</string>
+    <string name="tag_territory">Territory</string>
+    <string name="subterritory">Sub-Territory</string>
+    <string name="market">Market</string>
+    <string name="shop_image">Shop Image</string>
+    <string name="trade_image">Trade License Image</string>
+    <string name="image">Image</string>
+    <string name="tag_area">Area</string>
+    <string name="change">Change</string>
+    <string name="tag_submit">Submit</string>
+    <string name="tag_customer_directory">Customer Directory</string>
+    <string name="tag_search_customer">Search Customer</string>
+    <string name="tag_count">Count :</string>
+    <string name="tag_code">Code :</string>
+    <string name="tag_adress">Address :</string>
+    <string name="tag_market">Market :</string>
+    <string name="tag_chemist_type">Customer Type :</string>
+    <string name="mobile">Mobile :</string>
+    <string name="Update_Customer_Location">Update Customer</string>
+    <string name="order_s_information">Order\'s Information</string>
+    <string name="tag_campaign">Campaign</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="sync_item">Sync Items</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_done">Done</string>
+    <string name="submit_order">Submit Order</string>
+    <string name="save_order">Save Order</string>
+    <string name="offer">Offer</string>
+    <string name="tag_sales_order_records">Sales Order Records</string>
+    <string name="_0">0</string>
+    <string name="tag_total_net_amount">Total Net Amount</string>
+    <string name="_0_00">0.00</string>
+    <string name="tag_quantity">Quantity : </string>
+    <string name="tag_price">Price : </string>
+    <string name="tag_total_vat">Total VAT : </string>
+    <string name="tag_total_amount">Total Amount : </string>
+    <string name="common_filter">Filter</string>
+    <string name="employee_type">Employee Type</string>
+    <string name="mio">MIO</string>
+    <string name="asm">AM</string>
+    <string name="rsm">DZSM</string>
+    <string name="tag_provider_type">Provider Type</string>
+    <string name="tag_doctor_type">Doctor Type</string>
+    <string name="tag_territory_code">Teritorry Code</string>
+    <string name="tag_group">Group</string>
+    <string name="tag_cluster">Cluster</string>
+    <string name="tag_region">Region</string>
+    <string name="name">Name</string>
+    <string name="cov">Cov.</string>
+    <string name="amounta">Amount</string>
+    <string name="producta">Product</string>
+    <string name="ot">Order Times</string>
+    <string name="tqty">T.Qty</string>
+    <string name="changepw">Change Password</string>
+    <string name="tag_old_password">Old Password</string>
+    <string name="tag_new_password">New Password</string>
+    <string name="tag_confirm_password">Confirm New Password</string>
+    <string name="submit">Submit</string>
+    <string name="tag_creatrix_soft_tech_ltd">Creatrix Soft Tech Ltd.</string>
+    <string name="mbe">MBE</string>
+    <string name="abm">ABM</string>
+    <string name="rbm">RBM</string>
+    <string name="clusterhead">Cluster Head</string>
+    <string name="string_place_ofwork">Work Place</string>
+    <string name="punch_in">Punch In</string>
+    <string name="work_place">Work Place</string>
+    <string name="punch_out">Punch Out</string>
+    <string name="string_daily_attendance">Daily Attendance</string>
+    <string name="your_attendance_is_completed">Your Attendance is Completed</string>
+    <string name="tag_doctor_dashboard">Doctor Dashboard</string>
+    <string name="tag_today_s_total_prescription">Today\'s Total Rx.</string>
+    <string name="tag_no_record_yet">No record yet</string>
+    <string name="tag_todays_total_dcr">Today\'s Total DCR</string>
+    <string name="tag_pending_prescription">Pending Prescription</string>
+    <string name="pending_dcr">Pending DCR</string>
+    <string name="tag_add_doctor">ADD Doctor</string>
+    <string name="tag_prescription">ADD Prescription</string>
+    <string name="tag_add_dcr">ADD Doctor Call Report</string>
+
+    <string name="tag_no_dcr_yet">No DCR Yet</string>
+    <string name="prescription">ADD Rx</string>
+    <string name="add_doctor">Doctor Entry</string>
+    <string name="doctor_name">Name <font color='#FF0000'>*</font></string>
+    <string name="address">Address <font color='#FF0000'>*</font></string>
+    <string name="designation">Designation <font color='#FF0000'>*</font></string>
+    <string name="degree">Degree <font color='#FF0000'>*</font></string>
+    <string name="tag_doctor_category">Doctor Category  <font color='#FF0000'>*</font></string>
+    <string name="practice">Practising Session <font color='#FF0000'>*</font></string>
+    <string name="weeklyvisitday">Weekly Visit Day <font color='#FF0000'>*</font></string>
+    <string name="tag_date">"Date "</string>
+    <string name="dash">--------</string>
+    <string name="speciality">Speciality <font color='#FF0000'>*</font></string>
+    <string name="brand">Brand (Maximum 3)  <font color='#FF0000'>*</font></string>
+    <string name="tag_special_day">Special day</string>
+    <string name="contact_type">Contact type <font color='#FF0000'>*</font></string>
+    <string name="tag_update">Update</string>
+    <string name="add_dcp">ADD Doctor Call Plan</string>
+    <string name="tag_dcp">Doctor Call Plan</string>
+    <string name="tag_add_tweep">ADD TWWP</string>
+    <string name="tourtype">Tour Type</string>
+    <string name="work_type">Work Type</string>
+    <string name="od">Order/Delivery Day</string>
+    <string name="atime">Start Time</string>
+    <string name="spoint">Start Point</string>
+    <string name="epoint">End Point</string>
+    <string name="etime">End Time</string>
+    <string name="p1">P1</string>
+    <string name="p5">P5</string>
+    <string name="dott">------</string>
+    <string name="dotted">----- -----</string>
+    <string name="priority_brand_wise_promo_selection">Priority Brand wise Promo Selection</string>
+    <string name="todo_">TODO</string>
+    <string name="date_man">Date <font color='#FF0000'>*</font></string>
+    <string name="expanse_type_man">Expense Type <font color='#FF0000'>*</font></string>
+    <string name="amount">Amount <font color='#FF0000'>*</font></string>
+    <string name="bill_image">Bill Image <font color='#FF0000'>*</font></string>
+    <string name="expense_clam">Expense Claim</string>
+    <string name="start_date">Start Date <font color='#FF0000'>*</font></string>
+    <string name="end_date">End Date <font color='#FF0000'>*</font></string>
+    <string name="date_of_return_s_to_duty">Date Of Return\'s to Duty <font color='#FF0000'>*</font></string>
+    <string name="date_of_return_s_to_dutys">Date Of Return to Duty <font color='#FF0000'>*</font></string>
+    <string name="leave_address">Leave Address </string>
+    <string name="emergency_contact_no">Emergency Contact No <font color='#FF0000'>*</font></string>
+    <string name="reason">Reason <font color='#FF0000'>*</font></string>
+    <string name="prescription_type">Prescription Type : <font color='#FF0000'>*</font></string>
+    <string name="prescription_img">Prescription Image <font color='#FF0000'>*</font></string>
+    <string name="year">Year</string>
+    <string name="copy_from">Copy From</string>
+    <string name="_1_week">1 Week</string>
+    <string name="full_month">Full Month</string>
+    <string name="tour_plan">Tour Plan</string>
+    <string name="month">Month</string>
+    <string name="status">Status</string>
+    <string name="gender"> Gender <font color='#FF0000'>*</font></string>
+    <string name="Selectmbbs"> Select<font color='#FF0000'>*</font></string>
+    <string name="district">District  <font color='#FF0000'>*</font></string>
+    <string name="thana">Thana  <font color='#FF0000'>*</font></string>
+    <string name="no_of_patient_per_day">No. of patient per day  <font color='#FF0000'>*</font></string>
+    <string name="no_of_rx_npl">No. of Rx (NPL)  <font color='#FF0000'>*</font></string>
+    <string name="no_of_plan_call_per_month">No. of Plan Call / Month  <font color='#FF0000'>*</font></string>
+    <string name="potentiality">Potentiality  <font color='#FF0000'>*</font></string>
+    <string name="tour_type">Tour Type  <font color='#FF0000'>*</font></string>
+    <string name="Tag_Customers">Adjust Customer Code  <font color='#FF0000'>*</font></string>
+    <string name="visiting_card">Visiting Card  <font color='#FF0000'>*</font></string>
+    <string name="close">Close</string>
+    <string-array name="filter_status_cus">
+        <item>Select</item>
+        <item>Active</item>
+        <item>Inactive</item>
+
+    </string-array>
+
+    <string name="mbbs">MBBS</string>
+    <string name="non_mbbs">Non-MBBS</string>
+
+
+    <string-array name="filter_status">
+        <item>Select</item>
+        <item>Pending</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <string-array name="filter_employee">
+        <item>Select Type</item>
+        <item>MBE</item>
+        <item>ABM</item>
+        <item>RBM</item>
+    </string-array>
+</resources>

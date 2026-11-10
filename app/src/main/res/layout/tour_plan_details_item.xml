@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@drawable/main_custom_border_solid">
+
+        <TextView
+            android:id="@+id/sn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/shape_ovelbg"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:text="Visit Type  : "
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_mname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latoregular"
+                        android:textColor="@color/black"
+                        tools:text="string/name" />
+
+                </LinearLayout>
+                <!--  <TextView
+                      android:id="@+id/tv_date"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:textColor="@color/main"
+                      android:fontFamily="@font/lato"
+                      tools:text="string/date" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato"
+                        android:text="Tour Plan Purpose : "
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/tv_tpp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latoregular"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/isWhat"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text=""
+                    android:padding="1dp"
+                    android:textColor="@color/black" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_startplace"
+                    android:background="@drawable/left_line_box"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:padding="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latoregular"
+                        android:text="Start Place:"
+                        android:layout_marginLeft="7dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_Time"
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latoregular"
+                        android:text=""
+                        android:textStyle="italic"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_endplace"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/left_line_box_end"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical"
+                    android:padding="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latoregular"
+                        android:text="End Place:"
+                        android:layout_marginLeft="7dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_Place"
+                        android:layout_marginLeft="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/latoregular"
+                        android:text=""
+                        android:textStyle="italic"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_visited_with"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/latoregular"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lll2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:id="@+id/lbl_otherMarketV"
+                    android:text="@string/Other_Market_Visit_list"
+                    android:textColor="@color/black" />
+                <ListView
+                    android:id="@+id/marketListLvMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lll2"
+                android:id="@+id/lll2Objective"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+
+                android:text="Objective:"
+                android:textColor="@color/black" />
+                <TextView
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+android:id="@+id/tvObjective"
+                android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato"
+                    android:text="Customers : "
+                    android:textColor="@color/black" />
+                <ListView
+                    android:id="@+id/custListLvMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:background="@color/amber"
+            android:padding="4dp"
+            android:text="Edit"
+
+            android:visibility="gone"
+            android:textColor="@color/white"
+              />
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="end|bottom"
+            android:layout_marginLeft="8dp"
+            android:background="@color/red"
+            android:drawableLeft="@drawable/ic_del"
+            android:padding="4dp"
+            android:text="Delete"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/iEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="4dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/amber"
+            android:padding="4dp"
+
+            app:tint="@color/white"
+            android:src="@drawable/baseline_edit_24" />
+        <ImageView
+            android:id="@+id/idelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:elevation="4dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/red"
+            android:padding="4dp"
+            app:tint="@color/white"
+            android:src="@drawable/ic_del" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

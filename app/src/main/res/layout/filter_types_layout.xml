@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_progtypetype"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tag_provider_type"
+        android:textColorHint="@color/color_main_deep">
+
+        <AutoCompleteTextView
+            android:id="@+id/spinner_programtype"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:completionThreshold="1"
+            android:padding="10dp"
+            android:enabled="false"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_doctype"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tag_doctor_type"
+        android:textColorHint="@color/color_main_deep">
+
+        <AutoCompleteTextView
+            android:id="@+id/spinner_doctortype"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:completionThreshold="1"
+            android:enabled="false"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_teritorryid"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/tag_territory_code"
+        android:visibility="gone"
+        android:textColorHint="@color/color_main_deep">
+
+        <AutoCompleteTextView
+            android:id="@+id/spinner_teritorryid"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:completionThreshold="1"
+            android:enabled="false"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>
